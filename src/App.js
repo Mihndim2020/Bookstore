@@ -1,58 +1,57 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
+import NavBar from './features/components/NavBar';
+import Book from './features/components/Book';
+import AddBook from './features/components/AddBook';
+import BookCategories from './features/components/BookCategories';
 
-function App() {
+const booksInfo = [
+  {
+    id: 1,
+    category: 'Action',
+    name: 'The Hunger Games',
+    author: 'Suzanne Collins',
+    percentage: '64%',
+    chapter: 'Chapter 17',
+  },
+  {
+    id: 2,
+    category: 'Science Fiction',
+    name: 'Dune',
+    author: 'Frank Herbert',
+    percentage: '8%',
+    chapter: 'Chapter 3: "A Lesson Learned"',
+  },
+  {
+    id: 3,
+    category: 'Economy',
+    name: 'Capital in the Twenty-First Century',
+    author: 'Suzanne Collins',
+    percentage: '0%',
+    chapter: 'Introduction',
+  },
+];
+
+const App = () => {
+  const bookList = booksInfo.map((bookInfo) => <Book key={bookInfo.id} info={bookInfo} />);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
+    <Router>
+      <NavBar />
+      <Switch>
+        <Route exact path="/">
+          { bookList }
+          <AddBook />
+        </Route>
+        <Route path="/categories">
+          <BookCategories />
+        </Route>
+      </Switch>
+    </Router>
   );
-}
+};
 
 export default App;
