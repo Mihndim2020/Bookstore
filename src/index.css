@@ -9,7 +9,6 @@
   color: black;
 }
 
-
 .title-navbar {
   display: flex;
   align-items: baseline;
@@ -31,7 +30,6 @@
   color: #332c2c;
 }
 
-
 .nav-links ul li {
   padding: 0 15px;
   color: #121212;
@@ -41,7 +39,7 @@
 
 .book-row {
   display: flex;
-  padding:  2rem 12rem;
+  padding: 2rem 12rem;
 }
 
 .book-first-column {
