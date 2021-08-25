@@ -1,33 +1,25 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import {
+  Link,
+} from 'react-router-dom';
 
-import BookInfo from './BookInfo';
-import BookActions from './BookActions';
-import BookCompletionStatus from './BookCompletionStatus';
-import BookProgress from './BookProgress';
-
-const Book = ({ info }) => (
-  <div className="book-row">
-    <div className="book-first-column">
-      <BookInfo category={info.category} name={info.name} author={info.author} />
-      <BookActions />
+const NavBar = () => (
+  <>
+    <div className="title-navbar">
+      <h1 className="title-h1">Bookstore CMS</h1>
+      <nav className="nav-links">
+        <ul>
+          <li>
+            <Link to="/">BOOKS</Link>
+          </li>
+          <li>
+            <Link to="/categories">CATEGORIES</Link>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <div className="book-remaining-column">
-      <BookCompletionStatus percentage={info.percentage} />
-      <BookProgress chapter={info.chapter} />
-    </div>
-  </div>
+    <span><i /></span>
+  </>
 );
 
-Book.propTypes = {
-  info: PropTypes.shape({
-    id: PropTypes.number,
-    category: PropTypes.string,
-    name: PropTypes.string,
-    author: PropTypes.string,
-    percentage: PropTypes.string,
-    chapter: PropTypes.string,
-  }).isRequired,
-};
-
-export default Book;
+export default NavBar;

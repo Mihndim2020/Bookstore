@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BookNew = () => (
+const AddBook  = () => (
   <>
     <h2>ADD NEW BOOK</h2>
     <div className="add-book-form">
@@ -16,4 +16,4 @@ const BookNew = () => (
   </>
 );
 
-export default BookNew;
+export default AddBook;

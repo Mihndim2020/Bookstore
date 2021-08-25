@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Categories = () => (
+const BookCategories = () => (
   <h2>Under construction</h2>
 );
 
-export default Categories;
+export default BookCategories;

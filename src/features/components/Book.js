@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import BookInfo from './BookInfo';
 import BookActions from './BookActions';
-import BookCompletionStatus from './BookCompletionStatus';
+import BookStatus from './BookStatus';
 import BookProgress from './BookProgress';
 
 const Book = ({ info }) => (
@@ -13,7 +13,7 @@ const Book = ({ info }) => (
       <BookActions />
     </div>
     <div className="book-remaining-column">
-      <BookCompletionStatus percentage={info.percentage} />
+      <BookStatus percentage={info.percentage} />
       <BookProgress chapter={info.chapter} />
     </div>
   </div>
