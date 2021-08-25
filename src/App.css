@@ -1,0 +1,10 @@
+.App {
+  background-color: #fafafa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10.625rem;
+  border: 1px salmon solid;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}

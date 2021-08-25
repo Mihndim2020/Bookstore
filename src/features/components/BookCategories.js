@@ -1,7 +1,7 @@
 import React from 'react';
 
 const BookCategories = () => (
-  <h2>Under construction</h2>
+  <h1 className="Cat">Under construction</h1>
 );
 
 export default BookCategories;

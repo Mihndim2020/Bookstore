@@ -2,7 +2,7 @@ import React from 'react';
 
 const AddBook  = () => (
   <>
-    <h2>ADD NEW BOOK</h2>
+    <h2 className="add-book-form">ADD NEW BOOK</h2>
     <div className="add-book-form">
       <input className="book-input" placeholder="Book title" />
       <select className="category-select" name="categories" id="categories">
