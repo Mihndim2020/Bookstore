@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 
 import { addBook } from '../redux/books/books';
 
-const BookNew = () => {
+const AddBook = () => {
   const [bookCategory, setBookCategory] = useState('');
   const [bookTitle, setBookTitle] = useState('');
   const [bookAuthor, setBookAuthor] = useState('');
@@ -75,4 +75,4 @@ const BookNew = () => {
   );
 };
 
-export default BookNew;
+export default AddBook;

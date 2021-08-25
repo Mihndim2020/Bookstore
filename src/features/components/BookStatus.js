@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BookCompletionStatus = () => (
+const BookStatus = () => (
   <div className="book-completion-status">
     <i />
     <p className="completion-percentage">0%</p>
@@ -8,4 +8,4 @@ const BookCompletionStatus = () => (
   </div>
 );
 
-export default BookCompletionStatus;
+export default BookStatus;

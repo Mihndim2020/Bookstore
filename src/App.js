@@ -4,10 +4,10 @@ import {
   Route,
 } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import Header from './components/Header';
-import BookStore from './components/BookStore';
-import BookNew from './components/BookNew';
-import Categories from './components/Categories';
+import NavBar from './feature/components/NavBar';
+import BookStore from './redux/books/BookStore';
+import AddBook from './feature/components/AddBook';
+import Categories from './feature/components/Categories';
 import store from './redux/configureStore';
 
 const App = () => (
