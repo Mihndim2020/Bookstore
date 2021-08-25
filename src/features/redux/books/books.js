@@ -9,12 +9,12 @@ const initialState = [];
 
 // Action Creators
 
-export const addBook = payload => ({
+export const addBook = (payload) => ({
   type: ADD_BOOK,
   payload,
 });
 
-export const removeBook = payload => ({
+export const removeBook = (payload) => ({
   type: REMOVE_BOOK,
   payload,
 });
@@ -26,7 +26,7 @@ const reducer = (state = initialState, action) => {
     case ADD_BOOK:
       return [...state, action.payload];
     case REMOVE_BOOK:
-      return state.filter(book => book.id !== action.payload.id);
+      return state.filter((book) => book.id !== action.payload.id);
     default:
       return state;
   }
