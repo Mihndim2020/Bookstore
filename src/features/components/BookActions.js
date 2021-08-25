@@ -1,4 +1,3 @@
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
@@ -26,3 +25,5 @@ const BookActions = ({ id }) => {
 BookActions.propTypes = ({
   id: PropTypes.number,
 }).isRequired;
+
+export default BookActions;

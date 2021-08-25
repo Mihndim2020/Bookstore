@@ -4,23 +4,23 @@ import {
   Route,
 } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import NavBar from './feature/components/NavBar';
-import BookStore from './redux/books/BookStore';
-import AddBook from './feature/components/AddBook';
-import Categories from './feature/components/Categories';
-import store from './redux/configureStore';
+import NavBar from './features/components/NavBar';
+import BookStore from './features/redux/books/bookStore';
+import AddBook from './features/components/AddBook';
+import BookCategories from './features/components/BookCategories';
+import store from './features/redux/configureStore';
 
 const App = () => (
   <Provider store={store}>
     <Router>
-      <Header />
+      <NavBar />
       <Switch>
         <Route exact path="/">
           <BookStore />
-          <BookNew />
+          <AddBook />
         </Route>
         <Route path="/categories">
-          <Categories />
+          <BookCategories />
         </Route>
       </Switch>
     </Router>
