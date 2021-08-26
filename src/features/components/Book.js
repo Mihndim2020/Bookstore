@@ -8,12 +8,12 @@ import BookProgress from './BookProgress';
 
 const Book = (
   {
-    id, title, author, category,
+    id, title, category,
   },
 ) => (
   <div className="book-row">
     <div className="book-first-column">
-      <BookInfo title={title} author={author} category={category} />
+      <BookInfo title={title} category={category} />
       <BookActions id={id} />
     </div>
     <div className="book-remaining-column">
