@@ -8,7 +8,6 @@ const BookInfo = ({ title, category }) => (
   </div>
 );
 
-
 BookInfo.propTypes = {
   title: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,

@@ -19,7 +19,7 @@ const AddBook = () => {
 
   const dispatch = useDispatch();
 
-  const submitBookToStore = async(e) => {
+  const submitBookToStore = async (e) => {
     e.preventDefault();
 
     const newBook = {
