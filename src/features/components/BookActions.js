@@ -7,10 +7,9 @@ import { removeBook } from '../redux/books/books';
 const BookActions = ({ id }) => {
   const dispatch = useDispatch();
 
-  const handleBookRemoval = () => {
-    dispatch(removeBook({ id }));
+  const handleBookRemoval = async () => {
+    dispatch(removeBook(id));
   };
-
   return (
     <div className="book-actions">
       <a href="/#">Comments</a>
