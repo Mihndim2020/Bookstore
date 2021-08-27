@@ -1,10 +1,13 @@
 import React from 'react';
+import statusIcon from './statusIcon.png';
 
 const BookStatus = () => (
   <div className="book-completion-status">
-    <i />
-    <p className="completion-percentage">0%</p>
-    <p>Completed</p>
+    <img className="statusIcon" src={statusIcon} alt="Status Icon" />
+    <div className="stats">
+      <p className="completion-percentage">78%</p>
+      <p className="text-completed">Completed</p>
+    </div>
   </div>
 );
 
