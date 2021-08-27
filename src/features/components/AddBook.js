@@ -37,7 +37,7 @@ const AddBook = () => {
 
   return (
     <>
-      <h2 className="add-book-form">ADD NEW BOOK</h2>
+      <h2 className="add-book-title">ADD NEW BOOK</h2>
       <form onSubmit={submitBookToStore} className="add-book-form">
         <input
           name="title"
