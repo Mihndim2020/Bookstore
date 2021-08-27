@@ -1,10 +1,83 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
+
+body {
+  background-color: #fafafa;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.mainContainer {
   background-color: #fafafa;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  margin: 0 10.625rem;
-  border: 1px salmon solid;
+  border: 1px skyblue solid;
   font-size: calc(10px + 2vmin);
   color: black;
+}
+
+/***          Navbar        ***/
+
+.title-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.438rem 6.25rem;
+  height: 5.938rem;
+  background-color: white;
+}
+
+.title-logo {
+  width: 15rem;
+  height: 2.313rem;
+  font-family: Montserrat;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
+}
+
+.title-navbar .books {
+  width: 3.688rem;
+  height: 1rem;
+  margin: 1.125rem 2.563rem 0.688rem 0;
+  font-family: Montserrat;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+.title-navbar .categories {
+  width: 6.563rem;
+  height: 1rem;
+  margin: 1.125rem 41.5rem 0.688rem 2.563rem;
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+.leftNav {
+  display: flex;
+  align-items: baseline;
+}
+
+.profileIcon {
+  justify-self: left;
+  width: 2.813rem;
+  height: 2.813rem;
+  padding: 0.875rem;
+  border-radius: 50%;
 }

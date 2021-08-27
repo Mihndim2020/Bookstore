@@ -1,3 +1,4 @@
+import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,8 +17,10 @@ const App = () => (
       <NavBar />
       <Switch>
         <Route exact path="/">
-          <BookStore />
-          <AddBook />
+          <div className="mainContainer">
+            <BookStore />
+            <AddBook />
+          </div>
         </Route>
         <Route path="/categories">
           <BookCategories />
