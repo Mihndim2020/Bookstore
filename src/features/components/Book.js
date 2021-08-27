@@ -12,12 +12,14 @@ const Book = (
   },
 ) => (
   <div className="book-row">
-    <div className="book-first-column">
+    <div className="first-column">
       <BookInfo title={title} category={category} />
       <BookActions id={id} />
     </div>
-    <div className="book-remaining-column">
+    <div className="middle-column">
       <BookStatus />
+    </div>
+    <div>
       <BookProgress />
     </div>
   </div>

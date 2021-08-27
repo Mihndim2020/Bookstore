@@ -12,11 +12,11 @@ const BookActions = ({ id }) => {
   };
   return (
     <div className="book-actions">
-      <a href="/#">Comments</a>
-      {' | '}
-      <a href="/#" onClick={handleBookRemoval}>Remove</a>
-      {' | '}
-      <a href="/#">Edit</a>
+      <a href="/#" className="action-buttons">Comments</a>
+      <span className="stroke">{' | '}</span>
+      <a href="/#" onClick={handleBookRemoval} className="action-buttons">Remove</a>
+      <span className="stroke">{' | '}</span>
+      <a href="/#" className="action-buttons">Edit</a>
     </div>
   );
 };

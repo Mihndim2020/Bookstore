@@ -1,21 +1,6 @@
-.nav-links ul {
-  display: flex;
-  list-style-type: none;
-}
-
-.nav-links ul a {
-  text-decoration: none;
-  color: #332c2c;
-}
-
-.nav-links ul li {
-  padding: 0 15px;
-  color: #121212;
-}
-
 /* ----- Books ------ */
 
-.book-row {
+/* .book-row {
   display: flex;
   padding: 2rem 12rem;
 }
@@ -62,3 +47,4 @@
   font-size: 5rem;
   padding-left: 12rem;
 }
+ */

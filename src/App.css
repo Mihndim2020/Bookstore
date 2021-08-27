@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
 body {
   background-color: #fafafa;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Roboto Slab', sans-serif;
 }
 
 .mainContainer {
   background-color: #fafafa;
-  min-height: 100vh;
+  min-height: 68.563rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  padding: 1.438rem 6.25rem;
   border: 1px skyblue solid;
   font-size: calc(10px + 2vmin);
   color: black;
@@ -74,6 +78,21 @@ body {
   align-items: baseline;
 }
 
+.nav-links ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-links ul a {
+  text-decoration: none;
+  color: #332c2c;
+}
+
+.nav-links ul li {
+  padding: 0 15px;
+  color: #121212;
+}
+
 .profileIcon {
   justify-self: left;
   width: 2.813rem;
@@ -81,3 +100,111 @@ body {
   padding: 0.875rem;
   border-radius: 50%;
 }
+
+/******* book row *******/
+
+.book-row {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;  
+  height: 10.625rem;
+  margin-bottom: -12rem;
+  padding: 0.1rem 9.188rem 2rem 1.688rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff; 
+}
+
+.book-category {
+  width: 6.063rem;
+  height: 1.125rem;
+  margin: 0 2.438rem 0 0;
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  white-space: nowrap;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.book-title {
+  width: 12.313rem;
+  height: 1.813rem;
+  margin: 0.188rem 20.188rem 0 0;
+  font-family: RobotoSlab;
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.action-buttons {
+  width: 4.563rem;
+  height: 1.188rem;
+  margin: 0.188rem 0.2rem 0.125rem 0;
+  font-family: RobotoSlab;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.stroke {
+  font-size: 0.85rem;
+  opacity: 0.5;
+  margin-right: 0.2rem;
+}
+
+.book-actions a {
+  text-decoration: none;
+}
+
+.book-completion-status {
+  display: flex;
+  align-items: center;
+}
+
+.statusIcon {
+  width: 4.5rem;
+  height: 4rem;
+}
+
+.completion-percentage {
+  width: 4.25rem;
+  height: 2.438rem;
+  margin: 0.063rem 5.75rem 0 0.688rem;
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.text-completed {
+  width: 5rem;
+  height: 1.125rem;
+  margin: 0.438rem 4.938rem 0.75rem 0.75rem;
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
