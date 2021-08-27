@@ -5,14 +5,13 @@ body {
   background-color: #fafafa;
   box-sizing: border-box;
   font-family: 'Montserrat', 'Roboto Slab', sans-serif;
+  overflow-x: hidden;
 }
 
 .mainContainer {
   background-color: #fafafa;
-  min-height: 48.563rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   padding: 1.438rem 6.25rem;
   font-size: calc(10px + 2vmin);
   color: black;
@@ -59,7 +58,7 @@ body {
 .title-navbar .categories {
   width: 6.563rem;
   height: 1rem;
-  margin: 1.125rem 41.5rem 0.688rem 2.563rem;
+  margin: 1.125rem 1.5rem 0.688rem 2.563rem;
   opacity: 0.5;
   font-family: 'Montserrat', 'Roboto Slab', sans-serif;
   font-size: 0.813rem;
@@ -96,10 +95,8 @@ body {
 }
 
 .profileIcon {
-  justify-self: left;
   width: 2.813rem;
   height: 2.813rem;
-  padding: 0.875rem;
   border-radius: 50%;
 }
 
